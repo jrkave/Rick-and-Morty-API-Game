@@ -38,7 +38,7 @@ if __name__ == "__main__":
     list_all = list_alive + list_dead
     # Gets amount of characters in list: 726
     num_of_characters = (len(list_all))
-    random.seed(24)
+    random.seed()
     # Shuffles list to randomize
     random.shuffle(list_all)
     #jprint(list_all[0])
