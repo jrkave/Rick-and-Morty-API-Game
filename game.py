@@ -4,11 +4,11 @@ import random
 
 def game_instructions():
     print("Welcome to Dead or Alive: Rick and Morty Version.")
-    print("In this game, you will be given 10 random characters from Rick and Morty with some information about each one, such as their species, type, origin location, and the episode in which they were first seen in.")
+    print("In this game, you will be given 5 random characters from Rick and Morty with some information about each one, such as their species, type, origin location, and the episode in which they were first seen in.")
     print("The objective of this game is to correctly guess if a character is dead or alive.")
     print("If you do not remember the character and would like a reference photo, you will have the option to request one.")
     print("Each correct guess is worth 1 point. Incorrect guesses are awarded no points.")
-    print("Your score (out of 10) will be calculated at the end. Good luck!")
+    print("Your score will be calculated at the end. Good luck!")
     print()
 
 def jprint(obj):
