@@ -32,12 +32,12 @@ def characters_alive_or_dead(api_link):
 
 def errors(dict):
     my_dict = dict
-    # my_dict has two items {a:b and {c:d}}
     for key, value in my_dict.items():
         print(f"{key} is {value.lower()}.")
 
 if __name__ == "__main__":
 
+    # Provides API links, filtered by status=dead or status=alive
     alive_characters_link = "https://rickandmortyapi.com/api/character/?status=alive"
     dead_characters_link = "https://rickandmortyapi.com/api/character/?status=dead"
     list_alive = characters_alive_or_dead(alive_characters_link)
@@ -52,7 +52,7 @@ if __name__ == "__main__":
     #jprint(list_alive)
     #jprint(list_dead)
 
-    # # Prints game instructions and initializes variables
+    # Prints game instructions and intializes user_input variable
     game_instructions()
     user_input = ''
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
         dict_errors = {}
         
         while num_iterations < 5:
-            # Gets a random number to determine which character is chosen; list_all contains 726 characters
+            # Gets a random number to determine which character is chosen (ist_all contains 726 characters)
             choice = random.randint(0, 725)
             num_iterations += 1
 
