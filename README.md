@@ -1,8 +1,21 @@
-# API Project: Rick and Morty Game
-This project allows users to guess whether a character in Rick and Morty is alive or dead using data from an API.
+# Rick and Morty API Project
+## Description
+The Rick and Morty API Game is a Python-based interactive game where players can engage with characters from the popular TV series, Rick and Morty. Leveraging the Rick and Morty API, this game provides a fun and immersive experience by allowing players to guess whether a character is dead or alive in the series. To help users make their guesses, information about the characters (e.g. first episode appearance, origin location, species, type, and links to reference photos) are provided. 
 
-# Game 1 (main.py)
-The main.py file selects a character based on a random number from the user. Information about that character is printed for the viewer, such as the episode in which they first appeared, their origin location, species, type, and a link to a reference photo (if the user wants one). The user then determines whether the character is dead or alive and receives immediate feedback on their response. The amount of correct answers gets stored for the user to view, and they can continue playing until a 'quit' command is entered.
+## Table of Contents
+- Features
+- Installation
+- Usage
+- Code Overview
 
-# Game 2 (game.py)
-The game in this file is largely similar to the one built in main.py. However, instead of having a user enter a random number to select a character, this program auto-generates five characters for the user to determine their status. This game scores the amount of correct guesses and prints it at the end, along with answers to the questions that the user missed.
+## Features
+1. **Character Status Guessing**: Players are presented with information about a character and must guess whether that character is dead or alive
+2. **Interactive Gameplay**: Players receive immediate feedback on their guesses, fostering an engaging gameplay experience
+3. **Rick and Morty API Integration**: Utilizes the Rick and Morty API to dynamically fetch character details and images
+
+## Installation
+To run these games locally, use the following command: `git clone https://github.com/jrkave/Rick-and-Morty-API-Game.git`
+
+## Gaming Options / Code Overview
+- **Game 1: main.py**: In this version, the user chooses a random number between 1 and 725 to select a character. This number is used to fetch data about a specific character and ensures that the user cannot repeat characters they've already made guesses on. They receive immediate feedback on their answers and a counter keeps track of the amount of correct responses. The user may continue playing until issuing a 'quit' command.
+- **game.py**: This version of the game is similar to main.py but has a few key differences. Instead of having the user enter a random number to select a character, this program auto-generates five characters for the user determine their status. After guessing the five statuses, the game ends and the user is presented with answers to the questions they answered incorrectly. They are also able to choose whether or not to play again.
